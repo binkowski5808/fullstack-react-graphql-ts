@@ -37,6 +37,7 @@ const main = async () => {
         httpOnly: true,
         secure: __prod__, //only in prod (localhost is not working in https)
       },
+      saveUninitialized: false,
       secret: process.env.SESSION_SECRET,
       resave: false,
     })
